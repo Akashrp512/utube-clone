@@ -1,17 +1,20 @@
 
-import './App.css';
+import React from 'react';
+
 import SearchBar from './components/SearchBar';
 import VideoDetails from './components/VideoDetails';
 import VideoList from './components/VideoList';
 
-function App() {
+class App extends React.Component {
+  render() {
   return (
-    <div className="App">
-      <SearchBar />
+    <div className="App ui container">
+      <SearchBar  f/>
       <VideoDetails/>
       <VideoList />
     </div>
   );
+}
 }
 
 export default App;
